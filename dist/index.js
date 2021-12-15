@@ -1536,6 +1536,7 @@ const request = async({ method, instanceConfig, data, files, auth, actions, igno
         }
       }
     }
+    actions.debug('Initial data: ' + requestData)
     data=convertToJSON(data)
     const requestData = {
       auth,
