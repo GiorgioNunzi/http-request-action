@@ -1536,7 +1536,7 @@ const request = async({ method, instanceConfig, data, files, auth, actions, igno
         }
       }
     }
-
+    data=convertToJSON(data)
     const requestData = {
       auth,
       method,
